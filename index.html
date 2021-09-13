@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Dopp</title>
-</head>
-<body>
-    <h1>I will be web todo list build with vanilla JS</h1>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Vanilla Dopp</h1>
+        <form class="header--form" action="#">
+          <input placeholder="Escreva sua tarefa" type="text" id="taskId" />
+          <button>+</button>
+        </form>
+      </header>
+      <main>
+        <ul class="main--list">
+          <li class="list--item item--checked">
+            Comprar um Macbook
+            <input type="checkbox" id="checkbox_item_1" checked="1" />
+            <label class="checkbox--custom" for="checkbox_item_1" />
+          </li>
+          <li class="list--item">
+            Instalar XCode
+            <input type="checkbox" id="checkbox_item_1" />
+            <label class="checkbox--custom" for="checkbox_item_1" />
+          </li>
+        </ul>
+      </main>
+      <footer>
+        <p>Você tem 4 tarefas pendentes!</p>
+        <button>Limpar tudo!</button>
+      </footer>
+    </div>
+  </body>
 </html>
