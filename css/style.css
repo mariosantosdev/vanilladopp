@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --main-color: rgb(14, 233, 108);
+  --main-color-dark: rgb(9, 206, 94);
+}
+
 ::selection {
   color: #ffff;
   background: rgb(142, 73, 232);
@@ -21,7 +26,7 @@ input[type="submit"] {
   border: none;
   color: #fff;
   outline: none;
-  background: #8e49e8;
+  background: var(--main-color);
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
@@ -30,7 +35,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #721ce3;
+  background: var(--main-color-dark);
 }
 
 input[type="submit"].active {
@@ -84,7 +89,7 @@ header h1 {
 }
 
 .header--form input:focus {
-  border-color: #8e49e8;
+  border-color: var(--main-color);
 }
 
 .header--form input[type="submit"] {
@@ -132,7 +137,7 @@ header h1 {
   right: 10px;
   transform: translate(0, -50%);
 
-  background: #8e49e8;
+  background: var(--main-color);
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
