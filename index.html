@@ -23,24 +23,13 @@
         </form>
       </header>
       <main>
-        <ul class="main--list">
-          <li class="list--item item--checked">
-            Comprar um Macbook
-            <input type="checkbox" id="checkbox_item_1" checked="1" />
-            <label class="checkbox--custom" for="checkbox_item_1" />
-          </li>
-          <li class="list--item">
-            Instalar XCode
-            <input type="checkbox" id="checkbox_item_1" />
-            <label class="checkbox--custom" for="checkbox_item_1" />
-          </li>
-        </ul>
+        <ul class="main--list"></ul>
       </main>
       <footer>
-        <p>Você tem 4 tarefas pendentes!</p>
-        <input type="submit" value="Limpar tudo!" />
+        <p id="uncompletedTask">Você tem 0 tarefas concluidas!</p>
+        <input type="submit" value="Limpar tudo!" id="btnClearTasks" />
       </footer>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
