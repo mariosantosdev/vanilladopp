@@ -12,7 +12,7 @@
 
 ::selection {
   color: #ffff;
-  background: rgb(142, 73, 232);
+  background: var(--main-color-dark);
 }
 
 body {
